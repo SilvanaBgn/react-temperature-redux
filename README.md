@@ -2,19 +2,18 @@
 
 # Summary
 
-This is a ReactJS project, with simple temperature Celsius/Farenheit UI, to test lifting the state up between children and manage crossed events.
+This is a ReactJS project, with simple temperature Celsius/Farenheit UI, to test Redux state management.
 
-**You can RUN THE PROJECT**: go to this url [https://silvanabgn.github.io/react-temperature/](https://silvanabgn.github.io/react-temperature/)
+**You can RUN THE PROJECT**: go to this url []()
 
 # Motivation
 
-I wanted to create a page with React using Hooks to test lifting the state up between children and manage crossed events
+I wanted to create a page with React, and to compare my last implementation with Hooks lifting the state up, to this new one developed with Redux.
 
 ## Technical topics included
 
 - ReactJS - create-react-app
-- React basic hooks (useState/useEffect)
-- State and event between parent/children
+- Redux
 
 # Development section
 
