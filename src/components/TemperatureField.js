@@ -1,15 +1,13 @@
-function TemperatureField(props) {
+import { useSelector } from 'react-redux';
 
-  function handleInputChange(e) {
-    console.log('handleInput')
-    props.handleTemp(e.target.value);
-  }
+function TemperatureField(props) {
   console.log(props.scaleName, 'render');
+
+  const tempValue = useSelector(state => state.temperature);
   return (
     <fieldset>
        <legend>Enter temperature in {props.scaleName}:</legend>
-       <input value = {props.tempValue}
-              onChange = {handleInputChange} ></input>
+       <input value={tempValue}></input>
     </fieldset>
   )
 }
