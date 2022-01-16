@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { SCALE_CONVERSION } from '../utils/TempUnits';
+import { SCALES, SCALE_CONVERSION } from '../utils/TempUnits';
 import tempHasChanged from '../actions'
 
 function TemperatureField(props) {
-  console.log('TemperatureField', props.scaleName, 'render');
+  console.log('TemperatureField', SCALES[props.scaleLetter].scaleName, 'render');
   const temperature = useSelector(state => state.temperature);
   const dispatch = useDispatch();
 
@@ -23,7 +23,7 @@ function TemperatureField(props) {
 
   return (
     <fieldset>
-       <legend>Enter temperature in {props.scaleName}:</legend>
+       <legend>Enter temperature in {SCALES[props.scaleLetter].scaleName}:</legend>
        <input value={getValue()} onChange={handleTemperature}></input>
     </fieldset>
   )

@@ -8,8 +8,8 @@ function App() {
     <section className="App">
       <h1>Temperature</h1>
       <p><i>State handled with Redux</i></p>
-      <Field scaleName = "Celsius" scaleLetter="C" />
-      <Field scaleName = "Fahrenheit" scaleLetter="F" />
+      <Field scaleLetter="C" /> {/* Celsius */}
+      <Field scaleLetter="F" /> {/* Fahrenheit */}
       <BoilingStatus />
     </section>
   );
