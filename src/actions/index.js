@@ -1,8 +1,11 @@
-export const tempHasChanged = (newTemp) => {
+const tempHasChanged = (newTemp, scale) => {
   return {
     type: 'TEMP_HAS_CHANGED',
     payload: {
-      newTemp
+      newTemp,
+      scale
     }
   }
 }
+
+export default tempHasChanged;
