@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import SCALE_CONVERSION from '../utils/TempUnits';
+import { SCALE_CONVERSION } from '../utils/TempUnits';
 import tempHasChanged from '../actions'
 
 function TemperatureField(props) {
