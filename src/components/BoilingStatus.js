@@ -1,3 +1,5 @@
+import { useSelector } from "react-redux";
+
 const isBoiling = (celsiusTemperature) => {
   return celsiusTemperature >= 100;
 }
@@ -5,9 +7,10 @@ const isBoiling = (celsiusTemperature) => {
 function BoilingStatus(props) {
   console.log('BoilingStatus');
 
-  const boils = isBoiling(props.celsiusTemperature);
+  const tempValue = useSelector(state => state.temperature);
+
   return (
-    <p><b>{ boils ? 'Water IS boiling': 'There is still no heat to boil the water' }</b></p>
+    <p><b>{ isBoiling(tempValue) ? 'Water IS boiling': 'There is still no heat to boil the water' }</b></p>
   )
 }
 

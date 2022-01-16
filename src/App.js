@@ -1,5 +1,5 @@
 import Field from './components/TemperatureField';
-// import BoilingStatus from './components/BoilingStatus';
+import BoilingStatus from './components/BoilingStatus';
 // import {toCelsius, toFahrenheit} from './utils/TempUnits'
 
 function App() {
@@ -42,7 +42,7 @@ function App() {
       <p><i>State handled with Redux</i></p>
       <Field scaleName = "Celsius" />
       {/* <Field scaleName = "Fahrenheit" tempValue = {fahrenheit} handleTemp = {handleTempFahrenheit} /> */}
-      {/* <BoilingStatus celsiusTemperature = {celsius}/> */}
+      <BoilingStatus />
     </section>
   );
 }

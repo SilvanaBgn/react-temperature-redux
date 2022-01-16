@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 
 function TemperatureField(props) {
-  console.log(props.scaleName, 'render');
+  console.log('TemperatureField', props.scaleName, 'render');
 
   const tempValue = useSelector(state => state.temperature);
   return (
