@@ -4,16 +4,16 @@
 
 This is a ReactJS project, with simple temperature Celsius/Farenheit UI, to test Redux state management.
 
-**You can RUN THE PROJECT**: go to this url []()
+**You can RUN THE PROJECT**: go to this url [https://silvanabgn.github.io/react-temperature-redux](https://silvanabgn.github.io/react-temperature-redux)
 
 # Motivation
 
-I wanted to create a page with React, and to compare my last implementation with Hooks lifting the state up, to this new one developed with Redux.
+I wanted to create a page with React, and to compare my last implementation with Hooks of lifting the state up, to this other new one developed with Redux.
 
 ## Technical topics included
 
 - ReactJS - create-react-app
-- Redux
+- Redux (store, action, reducer, dispatch)
 
 # Development section
 
