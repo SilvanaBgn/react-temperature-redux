@@ -5,6 +5,7 @@ const isBoilingMessage = (temp, scale) => {
   if(temp >= SCALES[scale].boilTemp) {
     return 'Water IS boiling'
   }
+
   return 'There is still no heat to boil the water';
 }
 
