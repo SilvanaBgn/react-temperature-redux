@@ -1,5 +1,6 @@
 const thermoReducer = (state={ value: 0, scale: 'C'}, action) => {
   console.log('Thermo Reducer - state:', state)
+
   switch (action.type) {
     case 'TEMP_HAS_CHANGED':
       return {
